@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trent May Portfolio</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<!--Header Of Page-->
+<div class="container container-fluid">
+    <h1>Welcome to My Portfolio</h1>
+</div>
+<!--About Me Section-->
+<div class="container container-fluid">
+    <div class="container col-lg-5 col-md-5 col-sm-12 pull-left">
+        <img class="img-responsive img-circle pull-left light" src="images/trent_may.jpg">
+    </div>
+    <div class="container col-lg-7 col-md-6 col-sm-12 pull-right">
+        <h2 class="page-header">Hello, My Name Is Trenton May</h2>
+        <p>I am a Web Design and Development major. In my career as a student I have worked on countless projects
+        that were designed to show my skill in specific areas of design and development of web applications.
+        From basic HTML5 web pages like this one to fully functional PHP/JavaScript applications I have had learned how
+        to code and have honed my skills to be a valuable employee and start my career in web development. I even
+        am able to work with some frameworks that make the development process streamlined and easy to read for other
+        developers. So far I am mostly experienced in CodeIgniter (A PHP framework that promotes MVC) and BootStrap (
+        the CSS/HTML framework that this page is built upon). I hope you enjoy examples of my feats below!</p>
+    </div>
+</div>
+<!--Display Area-->
+<div class="container container-fluid">
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light multi img-responsive img-rounded" src="images/bp/bp1.png">
+        <img class="light multi img-responsive img-rounded" src="images/bp/bp2.png">
+        <img class="light multi img-responsive img-rounded" src="images/bp/bp3.png">
+        <img class="light multi img-responsive img-rounded" src="images/bp/bp4.png">
+        <img class="light multi img-responsive img-rounded" src="images/bp/bp5.png">
+        <img class="light multi img-responsive img-rounded" src="images/bp/bp6.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light singles img-responsive img-rounded" src="images/cano/Cano-CO.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light doubles img-responsive img-rounded" src="images/CBRMoto1/CBR1.png">
+        <img class="light doubles img-responsive img-rounded" src="images/CBRMoto1/CBR2.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light singles img-responsive img-rounded" src="images/Client%20Manager/Client%20Manager.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light singles img-responsive img-rounded" src="images/FruitsApp/FruitsApp.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light singles img-responsive img-rounded" src="images/Grocery/Grocery.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light multi img-responsive img-rounded" src="images/MetalE/ME1.png">
+        <img class="light multi img-responsive img-rounded" src="images/MetalE/ME2.png">
+        <img class="light multi img-responsive img-rounded" src="images/MetalE/ME3.png">
+        <img class="light multi img-responsive img-rounded" src="images/MetalE/ME4.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light singles img-responsive img-rounded" src="images/Multi/Multi.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light doubles img-responsive img-rounded" src="images/SW/SW1.png">
+        <img class="light doubles img-responsive img-rounded" src="images/SW/SW2.png">
+    </div>
+    <div class="container col-lg-12 col-md-12 col-sm-12 display">
+        <img class="light doubles img-responsive img-rounded" src="images/Tasks/Tasks1.png">
+        <img class="light doubles img-responsive img-rounded" src="images/Tasks/Tasks2.png">
+    </div>
+</div>
+
+<!-----LightBox Modal-------->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content"></div>
+    </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3 class="modal-title">Heading</h3>
+
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $('.light').click(function(){
+        $('.modal-body').empty();
+        var title = $(this).parent('a').attr("title");
+        $('.modal-title').html(title);
+        $($(this).parents('div').html()).appendTo('.modal-body');
+        $('#myModal').modal({show:true});
+    });
+
+</script>
+</html>
