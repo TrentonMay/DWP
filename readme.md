@@ -9,10 +9,10 @@ The server is created by making a droplet through this service.
 
 ####Settings chose for this server are:
 
-*Ubuntu 12.04.5 x64
-*Smallest size Digital Ocean offers
-*Created in New York
-*No SSH key added
+* Ubuntu 12.04.5 x64
+* Smallest size Digital Ocean offers
+* Created in New York
+* No SSH key added
 
 Server is running Apache2 by using the following code.
 
