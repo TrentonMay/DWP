@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1b8c9f4-3542-4864-8098-43d9161dde0c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-    </list>
+    <list default="true" id="c1b8c9f4-3542-4864-8098-43d9161dde0c" name="Default" comment="" />
     <ignored path="LivePort.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
